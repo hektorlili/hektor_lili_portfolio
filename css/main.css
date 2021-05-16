@@ -1,0 +1,130 @@
+body{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*--layout--*/
+	body{
+		display: grid;
+		grid-template-areas:
+			"fejlec"
+			"tartalom"
+			"lablec"
+		;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+	}
+	header{
+		background-color: #213E72;
+		grid-area: fejlec;
+	}
+	main{
+		background-color: #9CA3B0;
+		grid-area: tartalom;
+	}
+	footer{
+		background-color: #213E72;
+		grid-area: lablec;
+	}
+/*--layout_end--*/
+
+/*--header--*/
+	header{
+		line-height: 2rem;
+		font-size: 1.25rem;
+		text-align: right;
+		padding: 1rem 1rem;
+	}
+	div{
+		padding: 0.5rem;
+	}
+	.header_bal{
+		float: left;
+		text-align: left;
+		min-width: min-content;
+		margin-left: 2rem;
+		font-size: 48px;
+		color: #C9D7DB;
+		font-weight: 700;
+	}
+	.header_jobb{
+		display: inline-block;
+		margin-top: 0.4rem;
+		margin-right: 2rem;
+	}
+	.gomb{
+		background-color: white;
+		border: black;
+		padding: 0.5rem;
+		border-radius: 1rem;
+		color: black;
+		margin: 0.5rem;
+	}
+	.gombakt{
+		background-color: lightblue;
+		border: black;
+		padding: 0.5rem;
+		border-radius: 1rem;
+		color: black;
+		margin: 0.5rem;
+	}
+/*--header_end--*/
+
+/*--footer--*/
+	footer{
+		line-height: 1.2rem;
+		font-size:0.9rem;
+		padding: 1rem;
+		padding-left: 3rem;
+		color: #C9D7DB
+	}
+	h1{
+		font-size: 1rem;
+		color: #C9D7DB;
+	}
+/*--footer_end--*/
+
+/*--main--*/
+	main{
+		line-height: 1.5rem;
+		font-size: 1rem;
+	}
+	.kep_kartya{
+		float: right;
+		width: 40%;
+		height: 40%;
+		margin-right: 3.5rem;
+	}
+	.szoveg_kartya{
+		float: left;
+		width: 50%;
+		margin-left: 2rem;
+		padding: 1.5rem;
+	}
+	.dokumentacio{
+		margin-left: 2rem;
+		padding: 1.5rem;
+	}
+	h2{
+		font-size: 1.5rem;
+		font-weight:600;
+		color: white;
+		padding-bottom: 0.5rem;
+	}
+	p{
+		padding-bottom: 1rem;
+		color: white;
+		font-size: 20px;
+	}
+/*--main_end--*/
